@@ -2,1351 +2,1351 @@ TAP version 13
 # Subtest: parses sample kustomization.yaml with bases, resources, patches, images, generators and findings
 ok 1 - parses sample kustomization.yaml with bases, resources, patches, images, generators and findings
   ---
-  duration_ms: 3.366458
+  duration_ms: 1.970083
   type: 'test'
   ...
 # Subtest: passes clean hardened kustomization overlay with zero findings
 ok 2 - passes clean hardened kustomization overlay with zero findings
   ---
-  duration_ms: 0.260833
+  duration_ms: 0.118541
   type: 'test'
   ...
 # Subtest: KustomizeViewModel filters by images, errors and search text
 ok 3 - KustomizeViewModel filters by images, errors and search text
   ---
-  duration_ms: 0.786375
+  duration_ms: 0.578542
   type: 'test'
   ...
 # Subtest: Pro report builders output audit, diff, CSV and manifest map Markdown
 ok 4 - Pro report builders output audit, diff, CSV and manifest map Markdown
   ---
-  duration_ms: 1.468625
+  duration_ms: 1.642833
   type: 'test'
   ...
 # Subtest: editorHtml enforces strict CSP with nonce and no unsafe-inline
 ok 5 - editorHtml enforces strict CSP with nonce and no unsafe-inline
   ---
-  duration_ms: 1.060666
+  duration_ms: 1.443458
   type: 'test'
   ...
 # Subtest: XSELL2 1: the list excludes self and non-zovo ids, and reads name and Pro prefix from package.json
 ok 6 - XSELL2 1: the list excludes self and non-zovo ids, and reads name and Pro prefix from package.json
   ---
-  duration_ms: 1.975416
+  duration_ms: 2.109875
   type: 'test'
   ...
 # Subtest: XSELL2 2: no "already have" line when no other Zovo tool with Pro is installed
 ok 7 - XSELL2 2: no "already have" line when no other Zovo tool with Pro is installed
   ---
-  duration_ms: 7.199208
+  duration_ms: 10.470208
   type: 'test'
   ...
 # Subtest: XSELL2 3: at most 3 names, then "and N more"
 ok 8 - XSELL2 3: at most 3 names, then "and N more"
   ---
-  duration_ms: 0.783667
+  duration_ms: 0.380792
   type: 'test'
   ...
 # Subtest: XSELL2 4: carry-over runs once, only after an unlock, never at activation; "Not now" is final
 ok 9 - XSELL2 4: carry-over runs once, only after an unlock, never at activation; "Not now" is final
   ---
-  duration_ms: 11.312792
+  duration_ms: 17.448708
   type: 'test'
   ...
 # Subtest: XSELL2 5: a carried key that fails verification falls back to the input box
 ok 10 - XSELL2 5: a carried key that fails verification falls back to the input box
   ---
-  duration_ms: 4.280875
+  duration_ms: 3.025459
   type: 'test'
   ...
 # Subtest: XSELL2 6: a tool that is already Pro returns without UI
 ok 11 - XSELL2 6: a tool that is already Pro returns without UI
   ---
-  duration_ms: 1.209625
+  duration_ms: 1.241792
   type: 'test'
   ...
 # Subtest: pro.json: a key unlock writes the key (mode 600, folder 700, no token); a second extension is Pro at activation
 ok 12 - pro.json: a key unlock writes the key (mode 600, folder 700, no token); a second extension is Pro at activation
   ---
-  duration_ms: 3.4965
+  duration_ms: 2.604916
   type: 'test'
   ...
 # Subtest: pro.json: a Sponsors unlock writes login, tier and date only; lifetime counts, notemods tiers never
 ok 13 - pro.json: a Sponsors unlock writes login, tier and date only; lifetime counts, notemods tiers never
   ---
-  duration_ms: 4.500125
+  duration_ms: 3.350583
   type: 'test'
   ...
 # Subtest: pro.json: a key with a bad signature, a test-mode key or another product never unlocks
 ok 14 - pro.json: a key with a bad signature, a test-mode key or another product never unlocks
   ---
-  duration_ms: 3.969792
+  duration_ms: 3.497708
   type: 'test'
   ...
 # Subtest: pro.json: picked up on the next Pro click and on window focus without a restart; Remove clears it
 ok 15 - pro.json: picked up on the next Pro click and on window focus without a restart; Remove clears it
   ---
-  duration_ms: 8.189583
+  duration_ms: 7.938375
   type: 'test'
   ...
 # Subtest: pro.json is off for unit tests and fakes unless a path is given (never the real home folder)
 ok 16 - pro.json is off for unit tests and fakes unless a path is given (never the real home folder)
   ---
-  duration_ms: 0.220917
+  duration_ms: 0.187833
   type: 'test'
   ...
 # Subtest: refund line hidden while refund_days is empty, shown with the owner value
 ok 17 - refund line hidden while refund_days is empty, shown with the owner value
   ---
-  duration_ms: 0.320041
+  duration_ms: 0.277916
   type: 'test'
   ...
 # Subtest: Gumroad hidden while gumroad_pro is empty: no rail, no button, no command, no request, key link ignored
 ok 18 - Gumroad hidden while gumroad_pro is empty: no rail, no button, no command, no request, key link ignored
   ---
-  duration_ms: 1.965167
+  duration_ms: 1.315667
   type: 'test'
   ...
 # Subtest: button order and the "I already paid" pick (EXEC14), every Pro link opens the tier
 ok 19 - button order and the "I already paid" pick (EXEC14), every Pro link opens the tier
   ---
-  duration_ms: 0.854542
+  duration_ms: 0.75175
   type: 'test'
   ...
 # Subtest: palette: 5 commands, category "Zovo Pro", the same titles in every product
 ok 20 - palette: 5 commands, category "Zovo Pro", the same titles in every product
   ---
-  duration_ms: 0.157875
+  duration_ms: 0.146791
   type: 'test'
   ...
 # Subtest: evaluate: a good purchase, team quantity, refund, chargeback, dispute, ended, wrong product, unknown key
 ok 21 - evaluate: a good purchase, team quantity, refund, chargeback, dispute, ended, wrong product, unknown key
   ---
-  duration_ms: 1.663083
+  duration_ms: 0.85525
   type: 'test'
   ...
 # Subtest: evaluate: errors are never final (offline, 5xx, 429, junk)
 ok 22 - evaluate: errors are never final (offline, 5xx, 429, junk)
   ---
-  duration_ms: 0.264709
+  duration_ms: 0.124
   type: 'test'
   ...
 # Subtest: key format: 4 groups of 8 hex digits, spaces and quotes removed
 ok 23 - key format: 4 groups of 8 hex digits, spaces and quotes removed
   ---
-  duration_ms: 0.294417
+  duration_ms: 0.153458
   type: 'test'
   ...
 # Subtest: unlock: one POST to the verify endpoint with product_id, the key and increment_uses_count=false; Pro is cached
 ok 24 - unlock: one POST to the verify endpoint with product_id, the key and increment_uses_count=false; Pro is cached
   ---
-  duration_ms: 1.864542
+  duration_ms: 0.919333
   type: 'test'
   ...
 # Subtest: the stored record has no email and lives only in SecretStorage; a restart reads it with no network
 ok 25 - the stored record has no email and lives only in SecretStorage; a restart reads it with no network
   ---
-  duration_ms: 0.653042
+  duration_ms: 0.27325
   type: 'test'
   ...
 # Subtest: unlock: wrong key, refund and network error give no Pro and a clear message
 ok 26 - unlock: wrong key, refund and network error give no Pro and a clear message
   ---
-  duration_ms: 0.788209
+  duration_ms: 0.364667
   type: 'test'
   ...
 # Subtest: unlock: cancelled input and a malformed key make no request
 ok 27 - unlock: cancelled input and a malformed key make no request
   ---
-  duration_ms: 0.5515
+  duration_ms: 0.240291
   type: 'test'
   ...
 # Subtest: an error at unlock never removes Pro that was granted
 ok 28 - an error at unlock never removes Pro that was granted
   ---
-  duration_ms: 0.497666
+  duration_ms: 0.207666
   type: 'test'
   ...
 # Subtest: 30-day cache: refresh does nothing before day 30, rechecks after, and keeps Pro offline (retry in a day)
 ok 29 - 30-day cache: refresh does nothing before day 30, rechecks after, and keeps Pro offline (retry in a day)
   ---
-  duration_ms: 2.137417
+  duration_ms: 2.098459
   type: 'test'
   ...
 # Subtest: remove clears the key; a damaged record is ignored
 ok 30 - remove clears the key; a damaged record is ignored
   ---
-  duration_ms: 0.78025
+  duration_ms: 0.411292
   type: 'test'
   ...
 # Subtest: a slow Gumroad times out as a network error (no Pro, no hang)
 ok 31 - a slow Gumroad times out as a network error (no Pro, no hang)
   ---
-  duration_ms: 51.184417
+  duration_ms: 52.916041
   type: 'test'
   ...
 # Subtest: wired only behind gumroad_pro (EXEC14): index.js loads gumroad.js only when the id is set; gumroad.js talks only to api.gumroad.com
 ok 32 - wired only behind gumroad_pro (EXEC14): index.js loads gumroad.js only when the id is set; gumroad.js talks only to api.gumroad.com
   ---
-  duration_ms: 0.463541
+  duration_ms: 0.424125
   type: 'test'
   ...
 # Subtest: EXEC14 prefill: a Gumroad key from the license link skips the input box, one request
 ok 33 - EXEC14 prefill: a Gumroad key from the license link skips the input box, one request
   ---
-  duration_ms: 0.146
+  duration_ms: 0.132084
   type: 'test'
   ...
 # Subtest: OFFER module version and exports
 ok 34 - OFFER module version and exports
   ---
-  duration_ms: 0.576208
+  duration_ms: 1.285083
   type: 'test'
   ...
 # Subtest: activate link: a good key turns Pro on with one message, no modal, no error; the key is stored like Enter a key
 ok 35 - activate link: a good key turns Pro on with one message, no modal, no error; the key is stored like Enter a key
   ---
-  duration_ms: 4.8605
+  duration_ms: 4.414292
   type: 'test'
   ...
 # Subtest: activate link: missing, damaged, foreign, test-mode, expired or wrong-sku keys change nothing and show one error
 ok 36 - activate link: missing, damaged, foreign, test-mode, expired or wrong-sku keys change nothing and show one error
   ---
-  duration_ms: 3.132709
+  duration_ms: 3.089458
   type: 'test'
   ...
 # Subtest: activate link: the old /license path still asks first
 ok 37 - activate link: the old /license path still asks first
   ---
-  duration_ms: 0.211875
+  duration_ms: 0.199666
   type: 'test'
   ...
 # Subtest: activate link: other installed Zovo extensions get the existing carry-over offer (one message), the shared file gets the key
 ok 38 - activate link: other installed Zovo extensions get the existing carry-over offer (one message), the shared file gets the key
   ---
-  duration_ms: 12.348958
+  duration_ms: 10.596417
   type: 'test'
   ...
 # Subtest: activate link arriving right after the window regains focus: no "Back from the checkout?" message
 ok 39 - activate link arriving right after the window regains focus: no "Back from the checkout?" message
   ---
-  duration_ms: 95.762666
+  duration_ms: 94.844166
   type: 'test'
   ...
 # Subtest: Pro panel: value line first, the tries of the clicked tool, N of 1 used for the others, seller line last
 ok 40 - Pro panel: value line first, the tries of the clicked tool, N of 1 used for the others, seller line last
   ---
-  duration_ms: 1.749084
+  duration_ms: 1.961625
   type: 'test'
   ...
 # Subtest: Not now: Pro panel only; dismisses cleanly inside the editor without opening external browser; no return message
 ok 41 - Not now: Pro panel only; dismisses cleanly inside the editor without opening external browser; no return message
   ---
-  duration_ms: 0.808167
+  duration_ms: 0.903792
   type: 'test'
   ...
 # Subtest: ?lang=: card and team links to the license Worker carry the VS Code language; Stripe links and odd values do not
 ok 42 - ?lang=: card and team links to the license Worker carry the VS Code language; Stripe links and odd values do not
   ---
-  duration_ms: 0.629417
+  duration_ms: 0.682959
   type: 'test'
   ...
 # Subtest: OFFER keeps the rules: nothing at activation, no network in index.js, no new price
 ok 43 - OFFER keeps the rules: nothing at activation, no network in index.js, no new price
   ---
-  duration_ms: 1.629667
+  duration_ms: 1.847
   type: 'test'
   ...
 # Subtest: OFFER info tab: Pay by card and Other ways come right after the price, before the tool list (above the fold)
 ok 44 - OFFER info tab: Pay by card and Other ways come right after the price, before the tool list (above the fold)
   ---
-  duration_ms: 0.248667
+  duration_ms: 0.319542
   type: 'test'
   ...
 # Subtest: PROINFO version and surfaces
 ok 45 - PROINFO version and surfaces
   ---
-  duration_ms: 1.749583
+  duration_ms: 1.361459
   type: 'test'
   ...
 # Subtest: refOf: <install id>_<surface>_<listing>, bad listing falls back to the CARD2 tag
 ok 46 - refOf: <install id>_<surface>_<listing>, bad listing falls back to the CARD2 tag
   ---
-  duration_ms: 0.589709
+  duration_ms: 0.298958
   type: 'test'
   ...
 # Subtest: toolsWithTries reads the listing tries store; triesText words
 ok 47 - toolsWithTries reads the listing tries store; triesText words
   ---
-  duration_ms: 1.509708
+  duration_ms: 0.575334
   type: 'test'
   ...
 # Subtest: renderHtml: the facts the buyer needs, two buttons, strict CSP, no remote content, escaped text
 ok 48 - renderHtml: the facts the buyer needs, two buttons, strict CSP, no remote content, escaped text
   ---
-  duration_ms: 0.751
+  duration_ms: 0.345
   type: 'test'
   ...
 # Subtest: Get Zovo Pro (palette) opens the info panel first: nothing at activation, no browser, no popup or toast
 ok 49 - Get Zovo Pro (palette) opens the info panel first: nothing at activation, no browser, no popup or toast
   ---
-  duration_ms: 5.9435
+  duration_ms: 5.527334
   type: 'test'
   ...
 # Subtest: Pay by card in the panel opens the Worker link tagged <install id>_<surface>_<listing>_<host>
 ok 50 - Pay by card in the panel opens the Worker link tagged <install id>_<surface>_<listing>_<host>
   ---
-  duration_ms: 1.827375
+  duration_ms: 2.928291
   type: 'test'
   ...
 # Subtest: Other ways: GitHub Sponsors, PayPal, team by card, Enter a key; no single-seat card row
 ok 51 - Other ways: GitHub Sponsors, PayPal, team by card, Enter a key; no single-seat card row
   ---
-  duration_ms: 0.865291
+  duration_ms: 0.927167
   type: 'test'
   ...
 # Subtest: OFFER: the Pro panel card button goes straight to the Worker link with its surface (no info tab)
 ok 52 - OFFER: the Pro panel card button goes straight to the Worker link with its surface (no info tab)
   ---
-  duration_ms: 0.619834
+  duration_ms: 0.646958
   type: 'test'
   ...
 # Subtest: payByCard command stays direct (no panel) and tagged with the listing; enterKey command exists
 ok 53 - payByCard command stays direct (no panel) and tagged with the listing; enterKey command exists
   ---
-  duration_ms: 0.620875
+  duration_ms: 0.632625
   type: 'test'
   ...
 # Subtest: fallbacks: no listing = CARD2 tag; no webview API or proInfo false = CARD2 pick; no card rail = no panel
 ok 54 - fallbacks: no listing = CARD2 tag; no webview API or proInfo false = CARD2 pick; no card rail = no panel
   ---
-  duration_ms: 0.89875
+  duration_ms: 0.923375
   type: 'test'
   ...
 # Subtest: the panel shows the tries left at each open
 ok 55 - the panel shows the tries left at each open
   ---
-  duration_ms: 0.19225
+  duration_ms: 0.18175
   type: 'test'
   ...
 # Subtest: panel language follows vscode.env.language; tool names, lines and the command stay English
 ok 56 - panel language follows vscode.env.language; tool names, lines and the command stay English
   ---
-  duration_ms: 0.629167
+  duration_ms: 0.571709
   type: 'test'
   ...
 # Subtest: CONV8: Get Zovo Pro from the toolbar row and the status bar opens the in-editor Pro panel; no browser before a button
 ok 57 - CONV8: Get Zovo Pro from the toolbar row and the status bar opens the in-editor Pro panel; no browser before a button
   ---
-  duration_ms: 0.589
+  duration_ms: 0.589542
   type: 'test'
   ...
 # Subtest: CONV2: with a direct Stripe link as card_buy_url the row still opens the info tab (no live Stripe from a click)
 ok 58 - CONV2: with a direct Stripe link as card_buy_url the row still opens the info tab (no live Stripe from a click)
   ---
-  duration_ms: 0.106708
+  duration_ms: 0.108292
   type: 'test'
   ...
 # Subtest: CONV8: the test Worker host also gets the panel; its card button opens the test host /pay/
 ok 59 - CONV8: the test Worker host also gets the panel; its card button opens the test host /pay/
   ---
-  duration_ms: 0.148334
+  duration_ms: 0.148083
   type: 'test'
   ...
 # Subtest: CONV8: the footer link opens the Pro panel, its links tagged _footer_<listing>; palette and title keep the info tab
 ok 60 - CONV8: the footer link opens the Pro panel, its links tagged _footer_<listing>; palette and title keep the info tab
   ---
-  duration_ms: 0.431375
+  duration_ms: 0.411667
   type: 'test'
   ...
 # Subtest: CONV8: { surface: pick, direct: true } (the REACH1 result line) opens the Pro panel, tagged _pick_; plain pick keeps the tab
 ok 61 - CONV8: { surface: pick, direct: true } (the REACH1 result line) opens the Pro panel, tagged _pick_; plain pick keeps the tab
   ---
-  duration_ms: 0.230083
+  duration_ms: 0.292667
   type: 'test'
   ...
 # Subtest: CONV3/CONV6: the Pro panel has "Pay USD 19 by card" first and "See details" second; See details opens the same tagged page
 ok 62 - CONV3/CONV6: the Pro panel has "Pay USD 19 by card" first and "See details" second; See details opens the same tagged page
   ---
-  duration_ms: 0.675459
+  duration_ms: 1.996833
   type: 'test'
   ...
 # Subtest: CONV3: a short panel ({ value }, tools: []) has the value line and no "free try used" lines
 ok 63 - CONV3: a short panel ({ value }, tools: []) has the value line and no "free try used" lines
   ---
-  duration_ms: 0.116667
+  duration_ms: 0.309291
   type: 'test'
   ...
 # Subtest: hostOf: normalizes known IDE schemes and appNames (Cursor, Windsurf, VSCodium, Trae, Antigravity, VS Code, Kiro, Positron) and sanitizes unknowns
 ok 64 - hostOf: normalizes known IDE schemes and appNames (Cursor, Windsurf, VSCodium, Trae, Antigravity, VS Code, Kiro, Positron) and sanitizes unknowns
   ---
-  duration_ms: 0.151292
+  duration_ms: 0.37325
   type: 'test'
   ...
 # Subtest: refOf: 4-segment <id>_<surface>_<listing>_<host> when host is provided, strictly matching /^[A-Za-z0-9_-]{1,199}$/
 ok 65 - refOf: 4-segment <id>_<surface>_<listing>_<host> when host is provided, strictly matching /^[A-Za-z0-9_-]{1,199}$/
   ---
-  duration_ms: 0.057542
+  duration_ms: 0.159083
   type: 'test'
   ...
 # Subtest: cardTag, trustHint, and panel/modal messages use IDE host & appName for Cursor, Windsurf, VSCodium, Trae, Antigravity
 ok 66 - cardTag, trustHint, and panel/modal messages use IDE host & appName for Cursor, Windsurf, VSCodium, Trae, Antigravity
   ---
-  duration_ms: 0.887333
+  duration_ms: 2.287375
   type: 'test'
   ...
 # Subtest: REACH1 tries label reads the existing counter as a remaining count
 ok 67 - REACH1 tries label reads the existing counter as a remaining count
   ---
-  duration_ms: 1.566416
+  duration_ms: 1.708583
   type: 'test'
   ...
 # Subtest: REACH1 card links carry toolbar and context surface tags
 ok 68 - REACH1 card links carry toolbar and context surface tags
   ---
-  duration_ms: 0.882542
+  duration_ms: 1.256042
   type: 'test'
   ...
 # Subtest: REACH1 row hides after close for the rest of the session
 ok 69 - REACH1 row hides after close for the rest of the session
   ---
-  duration_ms: 0.26575
+  duration_ms: 0.355167
   type: 'test'
   ...
 # Subtest: REACH1 emits no row when the listing has no Pro tools
 ok 70 - REACH1 emits no row when the listing has no Pro tools
   ---
-  duration_ms: 0.097708
+  duration_ms: 0.113625
   type: 'test'
   ...
 # Subtest: CONV3 result line: names the tool and the file, USD 19 once, one direct link tagged pick; escapes
 ok 71 - CONV3 result line: names the tool and the file, USD 19 once, one direct link tagged pick; escapes
   ---
-  duration_ms: 0.667209
+  duration_ms: 0.656208
   type: 'test'
   ...
 # Subtest: CONV3 status text: the first tool with a free try left, then "Pro tools"
 ok 72 - CONV3 status text: the first tool with a free try left, then "Pro tools"
   ---
-  duration_ms: 0.285833
+  duration_ms: 0.154917
   type: 'test'
   ...
 # Subtest: CONV3 value line (the Hex 0.3.14 panel copy) and file names
 ok 73 - CONV3 value line (the Hex 0.3.14 panel copy) and file names
   ---
-  duration_ms: 0.960417
+  duration_ms: 1.520375
   type: 'test'
   ...
 # Subtest: CONV3 used tracker: a drop in tries left gives one note with the file; the file name is kept for the panel
 ok 74 - CONV3 used tracker: a drop in tries left gives one note with the file; the file name is kept for the panel
   ---
-  duration_ms: 2.620792
+  duration_ms: 2.940125
   type: 'test'
   ...
 # Subtest: REACH2 alsoText and paletteTitle
 ok 75 - REACH2 alsoText and paletteTitle
   ---
-  duration_ms: 0.281833
+  duration_ms: 0.284166
   type: 'test'
   ...
 # Subtest: REACH2 createAlsoStatus: one item, the tool command, hidden after the time; no message, no popup
 ok 76 - REACH2 createAlsoStatus: one item, the tool command, hidden after the time; no message, no popup
   ---
-  duration_ms: 1103.3265
+  duration_ms: 1102.482833
   type: 'test'
   ...
 # Subtest: evaluate: the Zovo tier at any time = lifetime; active general monthly >= USD 10 = monthly; else none
 ok 77 - evaluate: the Zovo tier at any time = lifetime; active general monthly >= USD 10 = monthly; else none
   ---
-  duration_ms: 0.973583
+  duration_ms: 2.083208
   type: 'test'
   ...
 # Subtest: evaluate: notemods-only buyer is NOT Pro, whatever the amount or count
 ok 78 - evaluate: notemods-only buyer is NOT Pro, whatever the amount or count
   ---
-  duration_ms: 0.1205
+  duration_ms: 0.331041
   type: 'test'
   ...
 # Subtest: evaluate: the notemods tiers never count, even if a list names them by mistake
 ok 79 - evaluate: the notemods tiers never count, even if a list names them by mistake
   ---
-  duration_ms: 0.068
+  duration_ms: 0.15375
   type: 'test'
   ...
 # Subtest: evaluate: only my own payments to theluckystrike count
 ok 80 - evaluate: only my own payments to theluckystrike count
   ---
-  duration_ms: 0.120417
+  duration_ms: 0.364166
   type: 'test'
   ...
 # Subtest: evaluate: a refund of the Zovo tier takes it back; a later purchase gives it again
 ok 81 - evaluate: a refund of the Zovo tier takes it back; a later purchase gives it again
   ---
-  duration_ms: 0.074459
+  duration_ms: 0.183458
   type: 'test'
   ...
 # Subtest: evaluate: TIER_CHANGE to the Zovo tier counts; reason data
 ok 82 - evaluate: TIER_CHANGE to the Zovo tier counts; reason data
   ---
-  duration_ms: 0.054042
+  duration_ms: 1.37825
   type: 'test'
   ...
 # Subtest: constants: tiers from the brief, notemods excluded, no total rule
 ok 83 - constants: tiers from the brief, notemods excluded, no total rule
   ---
-  duration_ms: 1.104417
+  duration_ms: 0.530292
   type: 'test'
   ...
 # Subtest: ZOVO_TIER_DB_ID is the number inside the tier node id
 ok 84 - ZOVO_TIER_DB_ID is the number inside the tier node id
   ---
-  duration_ms: 0.109958
+  duration_ms: 0.08225
   type: 'test'
   ...
 # Subtest: nextRecord: errors keep the cache; lifetime never goes down
 ok 85 - nextRecord: errors keep the cache; lifetime never goes down
   ---
-  duration_ms: 0.321625
+  duration_ms: 0.303208
   type: 'test'
   ...
 # Subtest: parseRecord: damaged cache is ignored
 ok 86 - parseRecord: damaged cache is ignored
   ---
-  duration_ms: 0.351958
+  duration_ms: 0.347375
   type: 'test'
   ...
 # Subtest: Zovo tier buyer: Pro for life, every Zovo sku
 ok 87 - Zovo tier buyer: Pro for life, every Zovo sku
   ---
-  duration_ms: 0.697666
+  duration_ms: 0.71725
   type: 'test'
   ...
 # Subtest: Zovo tier bought months ago (sponsorship inactive, later a notemods purchase): Pro for life
 ok 88 - Zovo tier bought months ago (sponsorship inactive, later a notemods purchase): Pro for life
   ---
-  duration_ms: 0.122917
+  duration_ms: 0.125959
   type: 'test'
   ...
 # Subtest: notemods-only buyer ($15 one time): NOT Pro, told which tier is Zovo Pro
 ok 89 - notemods-only buyer ($15 one time): NOT Pro, told which tier is Zovo Pro
   ---
-  duration_ms: 0.132542
+  duration_ms: 0.135125
   type: 'test'
   ...
 # Subtest: notemods monthly sponsor ($5 a month, active): NOT Pro
 ok 90 - notemods monthly sponsor ($5 a month, active): NOT Pro
   ---
-  duration_ms: 0.084208
+  duration_ms: 0.08425
   type: 'test'
   ...
 # Subtest: notemods buyer who paid USD 45 in total: still NOT Pro (no total rule)
 ok 91 - notemods buyer who paid USD 45 in total: still NOT Pro (no total rule)
   ---
-  duration_ms: 0.086625
+  duration_ms: 0.091792
   type: 'test'
   ...
 # Subtest: active general monthly sponsor (USD 10 or more): Pro for 30 days, recheck date set
 ok 92 - active general monthly sponsor (USD 10 or more): Pro for 30 days, recheck date set
   ---
-  duration_ms: 0.1465
+  duration_ms: 0.153375
   type: 'test'
   ...
 # Subtest: ended general monthly sponsorship: no Pro, reason other-tier
 ok 93 - ended general monthly sponsorship: no Pro, reason other-tier
   ---
-  duration_ms: 0.08475
+  duration_ms: 0.086209
   type: 'test'
   ...
 # Subtest: not a sponsor: no Pro, message points to the USD 19 tier
 ok 94 - not a sponsor: no Pro, message points to the USD 19 tier
   ---
-  duration_ms: 0.103125
+  duration_ms: 0.105292
   type: 'test'
   ...
 # Subtest: the owner account (others bought from it) is not Pro
 ok 95 - the owner account (others bought from it) is not Pro
   ---
-  duration_ms: 0.362209
+  duration_ms: 0.376417
   type: 'test'
   ...
 # Subtest: a cached v1 record (old total rule) is ignored and deleted at start
 ok 96 - a cached v1 record (old total rule) is ignored and deleted at start
   ---
-  duration_ms: 0.092208
+  duration_ms: 0.095625
   type: 'test'
   ...
 # Subtest: network error on unlock keeps the cached Pro (never lock a paid user out)
 ok 97 - network error on unlock keeps the cached Pro (never lock a paid user out)
   ---
-  duration_ms: 0.215458
+  duration_ms: 0.235958
   type: 'test'
   ...
 # Subtest: network error with no cache: no Pro, nothing stored, nothing thrown
 ok 98 - network error with no cache: no Pro, nothing stored, nothing thrown
   ---
-  duration_ms: 0.087667
+  duration_ms: 0.08875
   type: 'test'
   ...
 # Subtest: restart offline: Pro comes from SecretStorage with no network and no sign-in
 ok 99 - restart offline: Pro comes from SecretStorage with no network and no sign-in
   ---
-  duration_ms: 0.142958
+  duration_ms: 0.158291
   type: 'test'
   ...
 # Subtest: isPro and refresh never show a sign-in; only unlock uses createIfNone
 ok 100 - isPro and refresh never show a sign-in; only unlock uses createIfNone
   ---
-  duration_ms: 0.227541
+  duration_ms: 0.235
   type: 'test'
   ...
 # Subtest: monthly: no recheck before 30 days
 ok 101 - monthly: no recheck before 30 days
   ---
-  duration_ms: 0.080834
+  duration_ms: 0.675959
   type: 'test'
   ...
 # Subtest: monthly recheck after 30 days: still active extends 30 days, silently
 ok 102 - monthly recheck after 30 days: still active extends 30 days, silently
   ---
-  duration_ms: 1.424416
+  duration_ms: 0.254792
   type: 'test'
   ...
 # Subtest: monthly recheck: the sponsor bought the Zovo tier meanwhile = lifetime
 ok 103 - monthly recheck: the sponsor bought the Zovo tier meanwhile = lifetime
   ---
-  duration_ms: 0.309209
+  duration_ms: 0.135584
   type: 'test'
   ...
 # Subtest: monthly recheck: moved from USD 10 a month to the notemods USD 5 tier = Pro ends
 ok 104 - monthly recheck: moved from USD 10 a month to the notemods USD 5 tier = Pro ends
   ---
-  duration_ms: 0.275583
+  duration_ms: 0.239875
   type: 'test'
   ...
 # Subtest: monthly recheck: network error keeps Pro and waits a day before the next try
 ok 105 - monthly recheck: network error keeps Pro and waits a day before the next try
   ---
-  duration_ms: 0.165875
+  duration_ms: 0.43275
   type: 'test'
   ...
 # Subtest: monthly recheck: no silent session keeps Pro, no network
 ok 106 - monthly recheck: no silent session keeps Pro, no network
   ---
-  duration_ms: 0.102833
+  duration_ms: 0.276125
   type: 'test'
   ...
 # Subtest: monthly recheck: GitHub says the same account stopped and never bought the Zovo tier: Pro ends
 ok 107 - monthly recheck: GitHub says the same account stopped and never bought the Zovo tier: Pro ends
   ---
-  duration_ms: 0.194292
+  duration_ms: 0.482
   type: 'test'
   ...
 # Subtest: unlock with another, non-sponsor GitHub account does not remove lifetime Pro
 ok 108 - unlock with another, non-sponsor GitHub account does not remove lifetime Pro
   ---
-  duration_ms: 0.101
+  duration_ms: 0.2495
   type: 'test'
   ...
 # Subtest: sign-in cancelled: no network, nothing changes
 ok 109 - sign-in cancelled: no network, nothing changes
   ---
-  duration_ms: 0.059792
+  duration_ms: 0.150292
   type: 'test'
   ...
 # Subtest: 401 asks VS Code once for a new session, then reports auth
 ok 110 - 401 asks VS Code once for a new session, then reports auth
   ---
-  duration_ms: 0.096167
+  duration_ms: 0.335541
   type: 'test'
   ...
 # Subtest: 401 then a fresh token that works: unlocked
 ok 111 - 401 then a fresh token that works: unlocked
   ---
-  duration_ms: 0.076625
+  duration_ms: 0.208959
   type: 'test'
   ...
 # Subtest: INSUFFICIENT_SCOPES is reported as scope
 ok 112 - INSUFFICIENT_SCOPES is reported as scope
   ---
-  duration_ms: 0.088
+  duration_ms: 0.22275
   type: 'test'
   ...
 # Subtest: rate limit, 5xx, bad JSON, wrong shape: no Pro change, no throw
 ok 113 - rate limit, 5xx, bad JSON, wrong shape: no Pro change, no throw
   ---
-  duration_ms: 0.234292
+  duration_ms: 0.608916
   type: 'test'
   ...
 # Subtest: partial GraphQL error (user field failed) still uses the history
 ok 114 - partial GraphQL error (user field failed) still uses the history
   ---
-  duration_ms: 0.07175
+  duration_ms: 0.237
   type: 'test'
   ...
 # Subtest: GitHub refuses the history (data null): one fallback request for the current sponsorship
 ok 115 - GitHub refuses the history (data null): one fallback request for the current sponsorship
   ---
-  duration_ms: 0.127209
+  duration_ms: 0.340959
   type: 'test'
   ...
 # Subtest: fallback also refused: bad-response, nothing stored
 ok 116 - fallback also refused: bad-response, nothing stored
   ---
-  duration_ms: 0.089209
+  duration_ms: 0.2525
   type: 'test'
   ...
 # Subtest: fallback with a notemods-only current tier: NOT Pro
 ok 117 - fallback with a notemods-only current tier: NOT Pro
   ---
-  duration_ms: 0.077584
+  duration_ms: 0.254791
   type: 'test'
   ...
 # Subtest: long history: next pages only until the Zovo tier is found, at most MAX_PAGES
 ok 118 - long history: next pages only until the Zovo tier is found, at most MAX_PAGES
   ---
-  duration_ms: 0.232792
+  duration_ms: 0.556125
   type: 'test'
   ...
 # Subtest: a lifetime answer on page 1 makes no second request
 ok 119 - a lifetime answer on page 1 makes no second request
   ---
-  duration_ms: 0.066917
+  duration_ms: 0.180625
   type: 'test'
   ...
 # Subtest: a failed next page keeps the first answer (no throw)
 ok 120 - a failed next page keeps the first answer (no throw)
   ---
-  duration_ms: 0.090917
+  duration_ms: 0.232875
   type: 'test'
   ...
 # Subtest: timeout counts as a network error
 ok 121 - timeout counts as a network error
   ---
-  duration_ms: 30.780167
+  duration_ms: 30.704458
   type: 'test'
   ...
 # Subtest: the one request: POST api.github.com/graphql with the token and theluckystrike, nothing else
 ok 122 - the one request: POST api.github.com/graphql with the token and theluckystrike, nothing else
   ---
-  duration_ms: 0.221833
+  duration_ms: 0.216375
   type: 'test'
   ...
 # Subtest: the token is never stored
 ok 123 - the token is never stored
   ---
-  duration_ms: 0.088417
+  duration_ms: 0.089875
   type: 'test'
   ...
 # Subtest: keychain not readable: the globalState copy keeps Pro
 ok 124 - keychain not readable: the globalState copy keeps Pro
   ---
-  duration_ms: 0.105334
+  duration_ms: 0.106916
   type: 'test'
   ...
 # Subtest: remove() clears both stores and fires the change
 ok 125 - remove() clears both stores and fires the change
   ---
-  duration_ms: 0.090833
+  duration_ms: 0.08775
   type: 'test'
   ...
 # Subtest: isPro needs a sku string
 ok 126 - isPro needs a sku string
   ---
-  duration_ms: 0.050667
+  duration_ms: 0.051791
   type: 'test'
   ...
 # Subtest: source: no telemetry, only the GitHub GraphQL URL and the Sponsors page
 ok 127 - source: no telemetry, only the GitHub GraphQL URL and the Sponsors page
   ---
-  duration_ms: 0.207125
+  duration_ms: 0.198583
   type: 'test'
   ...
 # Subtest: valid lifetime key
 ok 128 - valid lifetime key
   ---
-  duration_ms: 4.1055
+  duration_ms: 2.676417
   type: 'test'
   ...
 # Subtest: copy noise is tolerated: spaces, line breaks, quotes
 ok 129 - copy noise is tolerated: spaces, line breaks, quotes
   ---
-  duration_ms: 0.785834
+  duration_ms: 0.366209
   type: 'test'
   ...
 # Subtest: tampered payload fails the signature
 ok 130 - tampered payload fails the signature
   ---
-  duration_ms: 0.822792
+  duration_ms: 0.377959
   type: 'test'
   ...
 # Subtest: tampered signature or other signer fails
 ok 131 - tampered signature or other signer fails
   ---
-  duration_ms: 1.021333
+  duration_ms: 0.486916
   type: 'test'
   ...
 # Subtest: wrong sku is refused; bundle sku unlocks all
 ok 132 - wrong sku is refused; bundle sku unlocks all
   ---
-  duration_ms: 1.175792
+  duration_ms: 0.516292
   type: 'test'
   ...
 # Subtest: yearly key: valid through the exp day (UTC), expired after
 ok 133 - yearly key: valid through the exp day (UTC), expired after
   ---
-  duration_ms: 0.946625
+  duration_ms: 0.400917
   type: 'test'
   ...
 # Subtest: test-mode key refused unless allowTest
 ok 134 - test-mode key refused unless allowTest
   ---
-  duration_ms: 0.711375
+  duration_ms: 0.309917
   type: 'test'
   ...
 # Subtest: garbage and wrong versions
 ok 135 - garbage and wrong versions
   ---
-  duration_ms: 0.774084
+  duration_ms: 0.56575
   type: 'test'
   ...
 # Subtest: embedded public key is a real Ed25519 SPKI key (not the placeholder)
 ok 136 - embedded public key is a real Ed25519 SPKI key (not the placeholder)
   ---
-  duration_ms: 0.40075
+  duration_ms: 0.390166
   type: 'test'
   ...
 # Subtest: key rail: offline unlock stores in SecretStorage, survives a restart, remove clears
 ok 137 - key rail: offline unlock stores in SecretStorage, survives a restart, remove clears
   ---
-  duration_ms: 1.272625
+  duration_ms: 1.238875
   type: 'test'
   ...
 # Subtest: key rail: wrong sku, tampered, test-mode and cancel return reasons and store nothing
 ok 138 - key rail: wrong sku, tampered, test-mode and cancel return reasons and store nothing
   ---
-  duration_ms: 0.705375
+  duration_ms: 0.724709
   type: 'test'
   ...
 # Subtest: facade: Pro when ANY rail says so; commands registered; change events
 ok 139 - facade: Pro when ANY rail says so; commands registered; change events
   ---
-  duration_ms: 1.242542
+  duration_ms: 1.356875
   type: 'test'
   ...
 # Subtest: facade default rails: Sponsors rail from sponsors.js + key rail; Enter key command unlocks
 ok 140 - facade default rails: Sponsors rail from sponsors.js + key rail; Enter key command unlocks
   ---
-  duration_ms: 1.391125
+  duration_ms: 1.49375
   type: 'test'
   ...
 # Subtest: facade unlock() with no rail id: the "I already paid" quick pick, GitHub Sponsors first (EXEC14)
 ok 141 - facade unlock() with no rail id: the "I already paid" quick pick, GitHub Sponsors first (EXEC14)
   ---
-  duration_ms: 0.481167
+  duration_ms: 0.482083
   type: 'test'
   ...
 # Subtest: EXEC14 order: panel [Get Zovo Pro, USD 19] [Pay with PayPal] [I already paid]; the paid pick lists Sponsors, key, other rails
 ok 142 - EXEC14 order: panel [Get Zovo Pro, USD 19] [Pay with PayPal] [I already paid]; the paid pick lists Sponsors, key, other rails
   ---
-  duration_ms: 0.937375
+  duration_ms: 0.927041
   type: 'test'
   ...
 # Subtest: Get Pro: Sponsors page by default; Stripe link gets a stable random install id; "" = not on sale
 ok 143 - Get Pro: Sponsors page by default; Stripe link gets a stable random install id; "" = not on sale
   ---
-  duration_ms: 0.825125
+  duration_ms: 0.815416
   type: 'test'
   ...
 # Subtest: requirePro: true when unlocked (and triggers rail refresh); explains with rail buttons when locked
 ok 144 - requirePro: true when unlocked (and triggers rail refresh); explains with rail buttons when locked
   ---
-  duration_ms: 0.170375
+  duration_ms: 0.1585
   type: 'test'
   ...
 # Subtest: requirePro: "I already paid" then a license key unlocks and returns true
 ok 145 - requirePro: "I already paid" then a license key unlocks and returns true
   ---
-  duration_ms: 0.337875
+  duration_ms: 0.324792
   type: 'test'
   ...
 # Subtest: expired yearly key: locked, Renew page offered and opened
 ok 146 - expired yearly key: locked, Renew page offered and opened
   ---
-  duration_ms: 0.303291
+  duration_ms: 0.29875
   type: 'test'
   ...
 # Subtest: yearly key runs out while the editor stays open
 ok 147 - yearly key runs out while the editor stays open
   ---
-  duration_ms: 0.2225
+  duration_ms: 0.218459
   type: 'test'
   ...
 # Subtest: vscode:// license link asks first, then stores; declining stores nothing
 ok 148 - vscode:// license link asks first, then stores; declining stores nothing
   ---
-  duration_ms: 0.594
+  duration_ms: 0.570292
   type: 'test'
   ...
 # Subtest: PRO1 compatibility: its PREFIX.payload.sig verifier accepts these keys
 ok 149 - PRO1 compatibility: its PREFIX.payload.sig verifier accepts these keys
   ---
-  duration_ms: 0.123666
+  duration_ms: 0.132542
   type: 'test'
   ...
 # Subtest: license.js and index.js make no network calls: no http/https/net/fetch
 ok 150 - license.js and index.js make no network calls: no http/https/net/fetch
   ---
-  duration_ms: 0.367625
+  duration_ms: 0.390541
   type: 'test'
   ...
 # Subtest: team licence: zovo-pro-team and zovo-pro + q=5 keys unlock every product and carry 5 seats
 ok 151 - team licence: zovo-pro-team and zovo-pro + q=5 keys unlock every product and carry 5 seats
   ---
-  duration_ms: 1.319292
+  duration_ms: 1.363792
   type: 'test'
   ...
 # Subtest: EXEC14 panel text: tries, detail, the other Pro tools, the count, free stays free; no refund line, no How to buy
 ok 152 - EXEC14 panel text: tries, detail, the other Pro tools, the count, free stays free; no refund line, no How to buy
   ---
-  duration_ms: 0.333292
+  duration_ms: 0.38475
   type: 'test'
   ...
 # Subtest: CONV2 PayPal: steps modal, USD 19 and team USD 59 links with currency, transaction-id form prefilled
 ok 153 - CONV2 PayPal: steps modal, USD 19 and team USD 59 links with currency, transaction-id form prefilled
   ---
-  duration_ms: 0.482459
+  duration_ms: 0.502875
   type: 'test'
   ...
 # Subtest: CONV2 requirePro "Pay with PayPal" button runs the PayPal steps
 ok 154 - CONV2 requirePro "Pay with PayPal" button runs the PayPal steps
   ---
-  duration_ms: 0.236666
+  duration_ms: 0.236875
   type: 'test'
   ...
 # Subtest: CONV2 back from GitHub Sponsors: one message after blur+focus, Unlock runs the Sponsors rail; never twice
 ok 155 - CONV2 back from GitHub Sponsors: one message after blur+focus, Unlock runs the Sponsors rail; never twice
   ---
-  duration_ms: 6.942833
+  duration_ms: 8.811792
   type: 'test'
   ...
 # Subtest: CONV2 back-from-browser: silent when Pro already, or after 2 h
 ok 156 - CONV2 back-from-browser: silent when Pro already, or after 2 h
   ---
-  duration_ms: 0.522041
+  duration_ms: 0.528584
   type: 'test'
   ...
 # Subtest: CONV2 back from PayPal: offers the transaction-id form
 ok 157 - CONV2 back from PayPal: offers the transaction-id form
   ---
-  duration_ms: 0.340042
+  duration_ms: 0.5695
   type: 'test'
   ...
 # Subtest: CONV2 not a buyer yet: warning offers the tier page (arms the return message) and PayPal
 ok 158 - CONV2 not a buyer yet: warning offers the tier page (arms the return message) and PayPal
   ---
-  duration_ms: 0.259125
+  duration_ms: 0.380709
   type: 'test'
   ...
 # Subtest: CONV2 no GitHub sign-in in this editor: offers PayPal and the license key
 ok 159 - CONV2 no GitHub sign-in in this editor: offers PayPal and the license key
   ---
-  duration_ms: 0.390666
+  duration_ms: 0.466625
   type: 'test'
   ...
 # Subtest: CONV2 no network and no message on activation
 ok 160 - CONV2 no network and no message on activation
   ---
-  duration_ms: 0.271
+  duration_ms: 0.319333
   type: 'test'
   ...
 # Subtest: CONV2 sequence: PayPal return message, then Get Pro arms the Sponsors return message again
 ok 161 - CONV2 sequence: PayPal return message, then Get Pro arms the Sponsors return message again
   ---
-  duration_ms: 0.350417
+  duration_ms: 0.518625
   type: 'test'
   ...
 # Subtest: CARD1 panel order with card_buy_url (CONV3: See Zovo Pro, USD 19 once), GitHub Sponsors, PayPal, Enter a key
 ok 162 - CARD1 panel order with card_buy_url (CONV3: See Zovo Pro, USD 19 once), GitHub Sponsors, PayPal, Enter a key
   ---
-  duration_ms: 0.618167
+  duration_ms: 0.636584
   type: 'test'
   ...
 # Subtest: CARD1 Pay by card opens card_buy_url with the stable random install id; arms the return message
 ok 163 - CARD1 Pay by card opens card_buy_url with the stable random install id; arms the return message
   ---
-  duration_ms: 0.721459
+  duration_ms: 0.751
   type: 'test'
   ...
 # Subtest: CARD1 Enter a key: a ZOVO1 key on the clipboard turns Pro on at once (offline), read only after the click
 ok 164 - CARD1 Enter a key: a ZOVO1 key on the clipboard turns Pro on at once (offline), read only after the click
   ---
-  duration_ms: 0.475917
+  duration_ms: 0.508208
   type: 'test'
   ...
 # Subtest: CARD1 Enter a key: damaged key on the clipboard opens the input box with it; no key there opens the pick, key first
 ok 165 - CARD1 Enter a key: damaged key on the clipboard opens the input box with it; no key there opens the pick, key first
   ---
-  duration_ms: 0.562584
+  duration_ms: 0.618541
   type: 'test'
   ...
 # Subtest: CARD1 back from the card checkout: one message, "Enter a key" runs the key path; silent when Pro already
 ok 166 - CARD1 back from the card checkout: one message, "Enter a key" runs the key path; silent when Pro already
   ---
-  duration_ms: 1.28825
+  duration_ms: 1.505125
   type: 'test'
   ...
 # Subtest: CARD1 free path: no network, no clipboard read, no message on activation with the card rail on
 ok 167 - CARD1 free path: no network, no clipboard read, no message on activation with the card rail on
   ---
-  duration_ms: 0.184541
+  duration_ms: 0.21025
   type: 'test'
   ...
 # Subtest: CARD1 the Worker key (Stripe test mode) passes the same check the extension runs
 ok 168 - CARD1 the Worker key (Stripe test mode) passes the same check the extension runs
   ---
-  duration_ms: 0.0595
+  duration_ms: 0.082167
   type: 'test'
   ...
 # Subtest: CARD2 getPro with card_buy_url: one pick, 4 rows in order, title + one hint line; nothing opens until a pick
 ok 169 - CARD2 getPro with card_buy_url: one pick, 4 rows in order, title + one hint line; nothing opens until a pick
   ---
-  duration_ms: 0.235875
+  duration_ms: 0.2705
   type: 'test'
   ...
 # Subtest: CARD2 pick rows: card opens the tagged Worker link, Sponsors the tier, PayPal the steps, Enter a key the key path
 ok 170 - CARD2 pick rows: card opens the tagged Worker link, Sponsors the tier, PayPal the steps, Enter a key the key path
   ---
-  duration_ms: 0.475791
+  duration_ms: 0.477166
   type: 'test'
   ...
 # Subtest: CARD2 surfaces: footer, panel, palette, support, pill, menu tag the card link; only [A-Za-z0-9_-], under 200
 ok 171 - CARD2 surfaces: footer, panel, palette, support, pill, menu tag the card link; only [A-Za-z0-9_-], under 200
   ---
-  duration_ms: 0.850917
+  duration_ms: 0.882
   type: 'test'
   ...
 # Subtest: CARD2 the Pro panel keeps its 4 buttons; the trust line ends the text; Sponsors opens the tier with no pick
 ok 172 - CARD2 the Pro panel keeps its 4 buttons; the trust line ends the text; Sponsors opens the tier with no pick
   ---
-  duration_ms: 0.180666
+  duration_ms: 0.193917
   type: 'test'
   ...
 # Subtest: CARD2 without card_buy_url: getPro, payByCard and the panel are exactly CARD1/EXEC14 (no pick, no tag, no hint)
 ok 173 - CARD2 without card_buy_url: getPro, payByCard and the panel are exactly CARD1/EXEC14 (no pick, no tag, no hint)
   ---
-  duration_ms: 0.194041
+  duration_ms: 0.196875
   type: 'test'
   ...
 # Subtest: CARD2 activation: no network, no clipboard read, no message and no pick with the card rail on
 ok 174 - CARD2 activation: no network, no clipboard read, no message and no pick with the card rail on
   ---
-  duration_ms: 0.5535
+  duration_ms: 0.55975
   type: 'test'
   ...
 # Subtest: rate link: SELF_ID is this extension
 ok 175 - rate link: SELF_ID is this extension
   ---
-  duration_ms: 0.391083
+  duration_ms: 0.409208
   type: 'test'
   ...
 # Subtest: rate link: footer order is Rate, More free viewers, Sponsor, PayPal (when set), Hide
 ok 176 - rate link: footer order is Rate, More free viewers, Sponsor, PayPal (when set), Hide
   ---
-  duration_ms: 0.829917
+  duration_ms: 0.539208
   type: 'test'
   ...
 # Subtest: rate link: hover markdown starts with Rate
 ok 177 - rate link: hover markdown starts with Rate
   ---
-  duration_ms: 0.180667
+  duration_ms: 0.080333
   type: 'test'
   ...
 # Subtest: rate link: a plain link, no new command and no prompt
 ok 178 - rate link: a plain link, no new command and no prompt
   ---
-  duration_ms: 0.911666
+  duration_ms: 1.186416
   type: 'test'
   ...
 # Subtest: rate link v2.2: in Cursor and other Open VSX editors, Rate opens the Open VSX reviews page
 ok 179 - rate link v2.2: in Cursor and other Open VSX editors, Rate opens the Open VSX reviews page
   ---
-  duration_ms: 0.306667
+  duration_ms: 0.675667
   type: 'test'
   ...
 # Subtest: rating: message and buttons
 ok 180 - rating: message and buttons
   ---
-  duration_ms: 0.842334
+  duration_ms: 0.834
   type: 'test'
   ...
 # Subtest: rating: v2.1 constants (v2.2 keeps them)
 ok 181 - rating: v2.1 constants (v2.2 keeps them)
   ---
-  duration_ms: 0.103417
+  duration_ms: 0.100833
   type: 'test'
   ...
 # Subtest: rating: 2 files in 2 sessions 4 hours apart ask; 1 file does not
 ok 182 - rating: 2 files in 2 sessions 4 hours apart ask; 1 file does not
   ---
-  duration_ms: 0.378292
+  duration_ms: 0.382417
   type: 'test'
   ...
 # Subtest: rating v2.3: the 2nd good file 30 minutes or more after the first one asks, in any session
 ok 183 - rating v2.3: the 2nd good file 30 minutes or more after the first one asks, in any session
   ---
-  duration_ms: 0.158375
+  duration_ms: 0.157208
   type: 'test'
   ...
 # Subtest: rating clock: 23:50 and 00:10 (2 calendar days, 20 minutes) do not pass
 ok 184 - rating clock: 23:50 and 00:10 (2 calendar days, 20 minutes) do not pass
   ---
-  duration_ms: 0.120084
+  duration_ms: 0.118375
   type: 'test'
   ...
 # Subtest: rating clock: 09:00 and 15:00 on one day pass
 ok 185 - rating clock: 09:00 and 15:00 on one day pass
   ---
-  duration_ms: 0.685375
+  duration_ms: 0.061042
   type: 'test'
   ...
 # Subtest: rating clock v2.3: the span is 30 minutes, to the minute
 ok 186 - rating clock v2.3: the span is 30 minutes, to the minute
   ---
-  duration_ms: 0.310625
+  duration_ms: 0.373833
   type: 'test'
   ...
 # Subtest: rating v2.3: the span counts from the first good file ever; a window waits 2 minutes
 ok 187 - rating v2.3: the span counts from the first good file ever; a window waits 2 minutes
   ---
-  duration_ms: 0.199917
+  duration_ms: 0.216875
   type: 'test'
   ...
 # Subtest: rating: session list stays short and keeps the first session
 ok 188 - rating: session list stays short and keeps the first session
   ---
-  duration_ms: 0.765791
+  duration_ms: 0.746166
   type: 'test'
   ...
 # Subtest: rating: never after an error
 ok 189 - rating: never after an error
   ---
-  duration_ms: 0.678084
+  duration_ms: 0.734791
   type: 'test'
   ...
 # Subtest: rating: "Later" asks again one time, 7 days later
 ok 190 - rating: "Later" asks again one time, 7 days later
   ---
-  duration_ms: 1.466041
+  duration_ms: 1.144459
   type: 'test'
   ...
 # Subtest: rating: never more than 2 asks in all, whatever the answers
 ok 191 - rating: never more than 2 asks in all, whatever the answers
   ---
-  duration_ms: 12.541375
+  duration_ms: 14.212291
   type: 'test'
   ...
 # Subtest: rating: closing the message counts like "Later"
 ok 192 - rating: closing the message counts like "Later"
   ---
-  duration_ms: 0.09
+  duration_ms: 0.091375
   type: 'test'
   ...
 # Subtest: rating: "Rate it" and "No thanks" end it
 ok 193 - rating: "Rate it" and "No thanks" end it
   ---
-  duration_ms: 2.191834
+  duration_ms: 1.697375
   type: 'test'
   ...
 # Subtest: rating: setting off, unfocused window, already asked in this session
 ok 194 - rating: setting off, unfocused window, already asked in this session
   ---
-  duration_ms: 0.077459
+  duration_ms: 0.074125
   type: 'test'
   ...
 # Subtest: rating: bad stored state is reset safely
 ok 195 - rating: bad stored state is reset safely
   ---
-  duration_ms: 0.1825
+  duration_ms: 0.507083
   type: 'test'
   ...
 # Subtest: migration: a v2 state keeps its count, asks and answers
 ok 196 - migration: a v2 state keeps its count, asks and answers
   ---
-  duration_ms: 0.097208
+  duration_ms: 0.111042
   type: 'test'
   ...
 # Subtest: migration: a v2 user who said "No thanks" or was asked twice is never asked again
 ok 197 - migration: a v2 user who said "No thanks" or was asked twice is never asked again
   ---
-  duration_ms: 0.091917
+  duration_ms: 0.085
   type: 'test'
   ...
 # Subtest: migration: v2 days count from the end of the newest v2 day
 ok 198 - migration: v2 days count from the end of the newest v2 day
   ---
-  duration_ms: 0.055042
+  duration_ms: 0.055625
   type: 'test'
   ...
 # Subtest: migration: a v2.2 state keeps its sessions, asks and answers
 ok 199 - migration: a v2.2 state keeps its sessions, asks and answers
   ---
-  duration_ms: 0.216666
+  duration_ms: 0.06
   type: 'test'
   ...
 # Subtest: migration: v1 state keeps its answers
 ok 200 - migration: v1 state keeps its answers
   ---
-  duration_ms: 0.163042
+  duration_ms: 0.128291
   type: 'test'
   ...
 # Subtest: samples: files from the extension folder or its storage do not count
 ok 201 - samples: files from the extension folder or its storage do not count
   ---
-  duration_ms: 0.183792
+  duration_ms: 0.187125
   type: 'test'
   ...
 # Subtest: rating: fake clock only from the env variables, bounded
 ok 202 - rating: fake clock only from the env variables, bounded
   ---
-  duration_ms: 0.138208
+  duration_ms: 0.128542
   type: 'test'
   ...
 # Subtest: rating: review link points at this extension, in the store of the editor
 ok 203 - rating: review link points at this extension, in the store of the editor
   ---
-  duration_ms: 0.056083
+  duration_ms: 0.438791
   type: 'test'
   ...
 # Subtest: rating v2.2: the store comes from the editor (VS Code: Marketplace, others: Open VSX)
 ok 204 - rating v2.2: the store comes from the editor (VS Code: Marketplace, others: Open VSX)
   ---
-  duration_ms: 0.103334
+  duration_ms: 0.292708
   type: 'test'
   ...
 # Subtest: rating: manifest has an askForRating setting, default true
 ok 205 - rating: manifest has an askForRating setting, default true
   ---
-  duration_ms: 0.037958
+  duration_ms: 0.112625
   type: 'test'
   ...
 # Subtest: rating v2.3: wiring asks at the 2nd file 30 minutes after the 1st, never in a window's first 2 minutes
 ok 206 - rating v2.3: wiring asks at the 2nd file 30 minutes after the 1st, never in a window's first 2 minutes
   ---
-  duration_ms: 0.85875
+  duration_ms: 1.739125
   type: 'test'
   ...
 # Subtest: rating: wiring waits 3 s after the success; a failure in that time cancels the ask
 ok 207 - rating: wiring waits 3 s after the success; a failure in that time cancels the ask
   ---
-  duration_ms: 125.529709
+  duration_ms: 125.773458
   type: 'test'
   ...
 # Subtest: rating: wiring ignores walkthrough samples
 ok 208 - rating: wiring ignores walkthrough samples
   ---
-  duration_ms: 0.246417
+  duration_ms: 0.245209
   type: 'test'
   ...
 # Subtest: rating: wiring, a failure in the session blocks the ask; "Later" then 7 days
 ok 209 - rating: wiring, a failure in the session blocks the ask; "Later" then 7 days
   ---
-  duration_ms: 0.318417
+  duration_ms: 0.349125
   type: 'test'
   ...
 # Subtest: rating: wiring asks at most once a session
 ok 210 - rating: wiring asks at most once a session
   ---
-  duration_ms: 0.085792
+  duration_ms: 0.089167
   type: 'test'
   ...
 # Subtest: rating: wiring respects the setting, v1 and v2 answers and a missing globalState
 ok 211 - rating: wiring respects the setting, v1 and v2 answers and a missing globalState
   ---
-  duration_ms: 0.297458
+  duration_ms: 0.303667
   type: 'test'
   ...
 # Subtest: rating: wiring never throws when VS Code calls fail
 ok 212 - rating: wiring never throws when VS Code calls fail
   ---
-  duration_ms: 0.157791
+  duration_ms: 0.141459
   type: 'test'
   ...
 # Subtest: rating v2.2: in Cursor (Open VSX), "Rate it" opens the Open VSX reviews page
 ok 213 - rating v2.2: in Cursor (Open VSX), "Rate it" opens the Open VSX reviews page
   ---
-  duration_ms: 0.121625
+  duration_ms: 0.139
   type: 'test'
   ...
 # Subtest: rating v2.3: one window that stays open asks at the 2nd file 30 minutes on, then never again in it
 ok 214 - rating v2.3: one window that stays open asks at the 2nd file 30 minutes on, then never again in it
   ---
-  duration_ms: 0.155958
+  duration_ms: 0.164709
   type: 'test'
   ...
 # Subtest: rating v2.2: in a long window, a failure blocks its session and 24 hours, not the later sessions
 ok 215 - rating v2.2: in a long window, a failure blocks its session and 24 hours, not the later sessions
   ---
-  duration_ms: 0.090834
+  duration_ms: 0.104208
   type: 'test'
   ...
 # Subtest: rating v2.3: constants
 ok 216 - rating v2.3: constants
   ---
-  duration_ms: 0.034166
+  duration_ms: 0.037417
   type: 'test'
   ...
 # Subtest: rating v2.3: an ask with no answer may come back 1 day later; "Later" and closing wait 7 days
 ok 217 - rating v2.3: an ask with no answer may come back 1 day later; "Later" and closing wait 7 days
   ---
-  duration_ms: 0.073584
+  duration_ms: 0.080708
   type: 'test'
   ...
 # Subtest: rating v2.3: a message left in the bell is not answered; the next window may ask once more after 1 day
 ok 218 - rating v2.3: a message left in the bell is not answered; the next window may ask once more after 1 day
   ---
-  duration_ms: 87.567166
+  duration_ms: 88.347334
   type: 'test'
   ...
 # Subtest: rating v2.3: openReview() opens the review page of this editor and ends the ask; pickItem() names the store
 ok 219 - rating v2.3: openReview() opens the review page of this editor and ends the ask; pickItem() names the store
   ---
-  duration_ms: 0.528875
+  duration_ms: 0.597208
   type: 'test'
   ...
 # Subtest: rating: no network module and no telemetry in rate.js
 ok 220 - rating: no network module and no telemetry in rate.js
   ---
-  duration_ms: 0.425958
+  duration_ms: 0.551167
   type: 'test'
   ...
 # Subtest: REACH2 policy numbers; v2.3 stays the default
 ok 221 - REACH2 policy numbers; v2.3 stays the default
   ---
-  duration_ms: 0.058417
+  duration_ms: 0.066834
   type: 'test'
   ...
 # Subtest: REACH2 decide: 3 good files on 2 different days ask; 3 on one day or 2 on 2 days do not
 ok 222 - REACH2 decide: 3 good files on 2 different days ask; 3 on one day or 2 on 2 days do not
   ---
-  duration_ms: 0.196417
+  duration_ms: 0.225208
   type: 'test'
   ...
 # Subtest: REACH2 decide: never within 24 hours after a Pro panel (every policy)
 ok 223 - REACH2 decide: never within 24 hours after a Pro panel (every policy)
   ---
-  duration_ms: 0.13875
+  duration_ms: 0.155167
   type: 'test'
   ...
 # Subtest: REACH2 a v2.3 state gets its days from its session starts
 ok 224 - REACH2 a v2.3 state gets its days from its session starts
   ---
-  duration_ms: 0.068875
+  duration_ms: 0.079042
   type: 'test'
   ...
 # Subtest: REACH2 wiring: asks once at the 3rd good file on the 2nd day; no ask after a Pro panel; proPanel() blocks too
 ok 225 - REACH2 wiring: asks once at the 3rd good file on the 2nd day; no ask after a Pro panel; proPanel() blocks too
   ---
-  duration_ms: 0.475417
+  duration_ms: 0.5975
   type: 'test'
   ...
 1..225
@@ -1357,4 +1357,4 @@ ok 225 - REACH2 wiring: asks once at the 3rd good file on the 2nd day; no ask af
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 1173.732208
+# duration_ms 1177.534625
