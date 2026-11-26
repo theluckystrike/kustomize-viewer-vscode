@@ -1,0 +1,317 @@
+{
+  "name": "zovo-kustomize-viewer",
+  "displayName": "Kustomize Overlay Viewer",
+  "description": "Inspect kustomization.yaml and Kustomization overlays in VS Code: resource tree, image tag overrides and static findings, offline.",
+  "version": "0.1.0",
+  "publisher": "zovo",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#0F172A",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/kustomize-viewer-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/theluckystrike/kustomize-viewer-vscode/issues"
+  },
+  "homepage": "https://github.com/theluckystrike/kustomize-viewer-vscode#readme",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other",
+    "Visualization"
+  ],
+  "keywords": [
+    "kustomize",
+    "kubernetes",
+    "k8s",
+    "kustomization",
+    "overlay",
+    "yaml",
+    "gitops",
+    "devops"
+  ],
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onUri",
+    "onCustomEditor:zovo-kustomize.viewer"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": true
+  },
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "zovo-kustomize.viewer",
+        "displayName": "Kustomize Overlay Viewer",
+        "selector": [
+          {
+            "filenamePattern": "kustomization.yaml"
+          },
+          {
+            "filenamePattern": "kustomization.yml"
+          },
+          {
+            "filenamePattern": "Kustomization"
+          }
+        ],
+        "priority": "default"
+      }
+    ],
+    "commands": [
+      {
+        "command": "zovoKustomize.openWith",
+        "title": "Open in Kustomize Overlay Viewer",
+        "category": "Kustomize Overlay Viewer",
+        "icon": "$(layers)"
+      },
+      {
+        "command": "zovoKustomize.openSample",
+        "title": "Open the Sample Kustomization",
+        "category": "Kustomize Overlay Viewer"
+      },
+      {
+        "command": "zovoKustomize.openWalkthrough",
+        "title": "Get Started",
+        "category": "Kustomize Overlay Viewer"
+      },
+      {
+        "command": "zovoKustomize.moreViewers",
+        "title": "More free tools by Zovo",
+        "category": "Kustomize Overlay Viewer"
+      },
+      {
+        "command": "zovoKustomize.supportDeveloper",
+        "title": "Support the developer",
+        "category": "Kustomize Overlay Viewer"
+      },
+      {
+        "command": "zovoKustomize.auditOverlay",
+        "title": "Audit Kustomize overlay drift and security (Pro, 1 free try)",
+        "category": "Kustomize Overlay Viewer"
+      },
+      {
+        "command": "zovoKustomize.diffOverlays",
+        "title": "Compare two Kustomize overlays (Pro, 1 free try)",
+        "category": "Kustomize Overlay Viewer"
+      },
+      {
+        "command": "zovoKustomize.exportManifestMap",
+        "title": "Export Kustomize resource and image map (Pro, 1 free try)",
+        "category": "Kustomize Overlay Viewer"
+      },
+      {
+        "command": "zovoKustomize.zovoPro.auditOverlay",
+        "title": "Zovo Pro: Audit Kustomize overlay drift and security"
+      },
+      {
+        "command": "zovoKustomize.zovoPro.diffOverlays",
+        "title": "Zovo Pro: Compare two Kustomize overlays"
+      },
+      {
+        "command": "zovoKustomize.zovoPro.exportManifestMap",
+        "title": "Zovo Pro: Export Kustomize resource and image map"
+      },
+      {
+        "command": "zovoKustomize.zovoTitle.auditOverlay",
+        "title": "Zovo Pro: Audit Kustomize overlay drift and security"
+      },
+      {
+        "command": "zovoKustomize.zovoTitle.diffOverlays",
+        "title": "Zovo Pro: Compare two Kustomize overlays"
+      },
+      {
+        "command": "zovoKustomize.zovoTitle.exportManifestMap",
+        "title": "Zovo Pro: Export Kustomize resource and image map"
+      },
+      {
+        "command": "zovoKustomize.getPro",
+        "title": "Get Zovo Pro (USD 19 once, all Zovo extensions)",
+        "category": "Zovo Pro"
+      },
+      {
+        "command": "zovoKustomize.payWithPayPal",
+        "title": "Pay for Zovo Pro with PayPal (USD 19, team of 5 USD 59)",
+        "category": "Zovo Pro"
+      },
+      {
+        "command": "zovoKustomize.unlockWithSponsors",
+        "title": "I already paid: unlock with GitHub Sponsors",
+        "category": "Zovo Pro"
+      },
+      {
+        "command": "zovoKustomize.enterLicenseKey",
+        "title": "Enter Zovo Pro license key",
+        "category": "Zovo Pro"
+      },
+      {
+        "command": "zovoKustomize.removeLicense",
+        "title": "Remove Zovo Pro from this editor",
+        "category": "Zovo Pro"
+      },
+      {
+        "command": "zovoKustomize.payByCard",
+        "title": "Pay for Zovo Pro by card (USD 19)",
+        "category": "Zovo Pro"
+      },
+      {
+        "command": "zovoKustomize.enterKey",
+        "title": "Enter a key",
+        "category": "Zovo Pro"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "zovoKustomize.zovoTitle.auditOverlay",
+          "when": "activeCustomEditorId == 'zovo-kustomize.viewer' && config.zovoKustomize.showProTools",
+          "group": "zovoPro@1"
+        },
+        {
+          "command": "zovoKustomize.zovoTitle.diffOverlays",
+          "when": "activeCustomEditorId == 'zovo-kustomize.viewer' && config.zovoKustomize.showProTools",
+          "group": "zovoPro@2"
+        },
+        {
+          "command": "zovoKustomize.zovoTitle.exportManifestMap",
+          "when": "activeCustomEditorId == 'zovo-kustomize.viewer' && config.zovoKustomize.showProTools",
+          "group": "zovoPro@3"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "zovoKustomize.openWith",
+          "when": "resourceFilename =~ /^(kustomization\\.ya?ml|Kustomization)$/i && !explorerResourceIsFolder",
+          "group": "navigation@9"
+        },
+        {
+          "command": "zovoKustomize.zovoPro.auditOverlay",
+          "when": "resourceFilename =~ /^(kustomization\\.ya?ml|Kustomization)$/i && !explorerResourceIsFolder && config.zovoKustomize.showProTools",
+          "group": "zovoPro@1"
+        },
+        {
+          "command": "zovoKustomize.zovoPro.diffOverlays",
+          "when": "resourceFilename =~ /^(kustomization\\.ya?ml|Kustomization)$/i && !explorerResourceIsFolder && config.zovoKustomize.showProTools",
+          "group": "zovoPro@2"
+        },
+        {
+          "command": "zovoKustomize.zovoPro.exportManifestMap",
+          "when": "resourceFilename =~ /^(kustomization\\.ya?ml|Kustomization)$/i && !explorerResourceIsFolder && config.zovoKustomize.showProTools",
+          "group": "zovoPro@3"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "zovoKustomize.auditOverlay",
+          "when": "config.zovoKustomize.showProTools"
+        },
+        {
+          "command": "zovoKustomize.diffOverlays",
+          "when": "config.zovoKustomize.showProTools"
+        },
+        {
+          "command": "zovoKustomize.exportManifestMap",
+          "when": "config.zovoKustomize.showProTools"
+        },
+        {
+          "command": "zovoKustomize.zovoPro.auditOverlay",
+          "when": "false"
+        },
+        {
+          "command": "zovoKustomize.zovoPro.diffOverlays",
+          "when": "false"
+        },
+        {
+          "command": "zovoKustomize.zovoPro.exportManifestMap",
+          "when": "false"
+        },
+        {
+          "command": "zovoKustomize.zovoTitle.auditOverlay",
+          "when": "false"
+        },
+        {
+          "command": "zovoKustomize.zovoTitle.diffOverlays",
+          "when": "false"
+        },
+        {
+          "command": "zovoKustomize.zovoTitle.exportManifestMap",
+          "when": "false"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Kustomize Overlay Viewer",
+      "properties": {
+        "zovoKustomize.maxFileMB": {
+          "type": "number",
+          "default": 8,
+          "minimum": 1,
+          "maximum": 64,
+          "description": "Files up to this size open in Kustomize Overlay Viewer."
+        },
+        "zovoKustomize.pageSize": {
+          "type": "number",
+          "default": 100,
+          "minimum": 20,
+          "maximum": 500,
+          "description": "Manifest entries shown on one page of the overlay table."
+        },
+        "zovoKustomize.showProTools": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the Zovo Pro tools (overlay audit, overlay diff and manifest map export) in the Command Palette, the Explorer menu, the editor title menu and the viewer toolbar. Everything free stays visible."
+        },
+        "zovoKustomize.askForRating": {
+          "type": "boolean",
+          "default": true,
+          "description": "Ask once for a store rating after 3 Kustomize files open without an error across 2 days. Choosing No thanks never asks again. Nothing is sent anywhere."
+        },
+        "zovoKustomize.showSupportLinks": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the small Rate, More free tools and Zovo Pro links at the bottom of the viewer. Nothing is sent anywhere."
+        },
+        "zovo.kustview.trial.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the 7-day Zovo Pro trial button in the Pro panel."
+        }
+      }
+    },
+    "walkthroughs": [
+      {
+        "id": "zovoKustomize.start",
+        "title": "Get started with Kustomize Overlay Viewer",
+        "description": "Inspect kustomization.yaml, kustomization.yml and Kustomization overlays in VS Code: resource tree, image tag overrides and static findings, offline.",
+        "steps": [
+          {
+            "id": "open",
+            "title": "Open a Kustomize overlay",
+            "description": "Click any kustomization.yaml, kustomization.yml or Kustomization file in the Explorer, or run Open in Kustomize Overlay Viewer.\n[Open the sample Kustomization](command:zovoKustomize.openSample)",
+            "media": {
+              "image": "images/screenshot.png",
+              "altText": "A Kustomize overlay open in the viewer showing resources, image tag overrides, generators and static findings."
+            },
+            "completionEvents": [
+              "onCommand:zovoKustomize.openSample"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node scripts/test.js",
+    "package": "npx -y @vscode/vsce@3 package --no-dependencies"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/theluckystrike/sponsorships?tier_id=679878"
+  }
+}

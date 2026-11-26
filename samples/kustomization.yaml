@@ -1,0 +1,52 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namePrefix: prod-
+
+bases:
+  - ../../base/api
+  - ../../base/worker
+
+resources:
+  - ingress.yaml
+  - pdb.yaml
+  - service-monitor.yaml
+
+patches:
+  - path: patches/resources-limit.yaml
+    target:
+      kind: Deployment
+      name: api-server
+  - path: patches/hpa-prod.yaml
+
+images:
+  - name: ghcr.io/acme/api-server
+    newName: ghcr.io/acme/api-server
+    newTag: latest
+  - name: ghcr.io/acme/worker
+    newTag: 2.14.3
+    digest: sha256:9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+  - name: postgres
+    newTag: 16.4-alpine
+
+configMapGenerator:
+  - name: api-config
+    behavior: merge
+    literals:
+      - LOG_LEVEL=info
+      - FEATURE_CACHE=true
+    files:
+      - configs/app.toml
+
+secretGenerator:
+  - name: api-credentials
+    type: Opaque
+    literals:
+      - DB_PASSWORD=supersecret-prod-password
+      - API_TOKEN=tok_live_987654321
+
+replicas:
+  - name: api-server
+    count: 4
+  - name: worker
+    count: 2
